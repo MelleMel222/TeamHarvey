@@ -1,0 +1,42 @@
+#zonal-stats-container {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+#zonal-stats-search {
+    display: block;
+    position: absolute;
+    z-index: 2;
+    top: 20px;
+    left: 75px;
+}
+
+#zonal-stats-info {
+    bottom: 20px;
+    color: #444;
+    height: auto;
+    font-family: arial;
+    left: 20px;
+    margin: 5px;
+    padding: 10px;
+    position: absolute;
+    text-align: left;
+    width: 200px;
+    z-index: 40;
+}
+
+i.fa.fa-spinner.fa-spin {
+    display: none;
+    position: absolute;
+    z-index: 10;
+    color: white;
+    font-size: 60px;
+    top: 30%;
+    left: 44%;
+}
+
+i.fa.fa-spinner.fa-spin.show {
+    display: inline-block;
+}

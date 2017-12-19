@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hurricane Harvey</title>
+    <link rel="shortcut icon" href="images/hurricaneSymbol.png"/>
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700" rel="stylesheet">
+    <!--custom styles-->
+    <link href="styles/main.css" type="text/css" rel="stylesheet"/>
+    <link rel="stylesheet" href="styles/damaged-heatmap.css"></link>
+    <link rel="stylesheet" href="styles/photo-clustering-map.css"></link>
+    <link rel="stylesheet" href="styles/layer-swipe-map.css"></link>
+    <link rel="stylesheet" href="styles/zonal-stats-map.css"></link>
+    <link rel="stylesheet" href="styles/inundation-viewer.css"></link>
+    <!--third party styles-->
+    <link rel="stylesheet" href="https://js.arcgis.com/3.22/esri/css/esri.css">
+    <link rel="stylesheet" href="https://js.arcgis.com/3.22/dijit/themes/claro/claro.css">
+    <link rel="stylesheet" href="https://js.arcgis.com/3.22/esri/themes/calcite/dijit/calcite.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--custom scripts-->
+    <script type="text/javascript" src="js/main.js"></script>
+    <!--third party scripts-->
+    <script src="https://js.arcgis.com/3.22/"></script>
+</head>
+<body class="claro">
+    <div class="leftnav">
+        <h1>Hurricane Harvey </h1>
+        <img src="images/hurricaneSymbol.svg" alt="">
+        <div class="nav-button-container open">
+            <div class="title">Home</div>
+            <div id="hurricane-harvey" class="nav-button selected">About Hurricane Harvey</div>
+            <div id="about-the-authors" class="nav-button">About the Team</div>
+            <div id="sources" class="nav-button">Sources</div>
+        </div>
+        <div class="nav-button-container">
+            <div class="title">Analysis Maps</div>
+            <div id="damaged-heatmap" class="nav-button">Building Damage</div>
+            <div id="zonal-stats" class="nav-button">Depth Grid Stats</div>
+            <div id="inundation-viewer" class="nav-button">Flood Inundation</div>
+        </div>
+        <div class="nav-button-container">
+            <div class="title">Awareness Maps</div>
+            <div id="photo-cluster" class="nav-button">Crowd-Sourced Photos</div>
+            <div id="layer-swipe" class="nav-button">Imagery Swipe</div>
+        </div>
+    </div>
+    <div id="main-container"></div>
+</body>
+</html>
