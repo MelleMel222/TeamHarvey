@@ -14,14 +14,14 @@ require([
     });
 
     // Harvey USACE flood image from my arcgis account
-    let urlString = "https://ags-swg.esriemcs.com/arcgis/rest/services/HarveyImagery/Harvey50cm_sid/MapServer/";
+    let urlString = "http://ags-swg.esriemcs.com/arcgis/rest/services/HarveyImagery/Harvey50cm_sid/MapServer/";
     let tiledLayer = new ArcGISTiledMapServiceLayer(urlString);
     map.addLayers([tiledLayer]);
 
     // creating new LayerSwipe Widget
     let layerSwipe = new LayerSwipe({
         type: "vertical",
-        left:950,
+        left:550,
         map: map,
         layers: [tiledLayer]
     }, "layer-swipe-widget");
